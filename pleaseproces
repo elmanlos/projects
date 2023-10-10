@@ -3,17 +3,43 @@
 <body>
 
 <h2>JavaScript Objects</h2>
-
 <p id="demo"></p>
-<p id="demu"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
 <script>
+const cars = ["Car", "Toyota", "Red"];
 
-let vehicles = {type:"Car", brand:"Toyota", color:"Red"};
-let vehicles2 = {type:"Car", brand:"Toyota", color:"Yellow"};
+let text = "this is a " + cars[0] + ", with brand "+ cars[1] + ", and color ";
+for (let i = 2 ; i < cars.length; i++) {
+  text += cars[i]  + "<br>";
+}
+console.log(text)
 
-document.getElementById("demo").innerHTML = "The car type is a " + vehicles.type + ",  with brand " + vehicles.brand + " and color " + vehicles.color;
-document.getElementById("demu").innerHTML = "The car type is a " + vehicles2.type + ",  with brand " + vehicles2.brand + " and color " + vehicles2.color;
+document.getElementById("demo").innerHTML = text;
+
+const cars1 = ["Bike", "Honda", "Blue"];
+
+ let text1 = "this is a " + cars1[0] + ", with brand "+ cars1[1] + ", and color ";
+for (let i = 2 ; i < cars1.length; i++) {
+  text1 += cars1[i]  + "<br>";
+}
+console.log(text1)
+
+document.getElementById("demo1").innerHTML = text1;
+
+const vehicles=["Truck", "Ford", "White"];
+
+let text2 = "this is a " + vehicles[0] + ", with brand "+ cars1[1] + ", and color ";
+for (let i = 2 ; i < vehicles.length; i++) {
+  text2 += vehicles[i]  + "<br>";
+}
+
+console.log(text2)
+
+document.getElementById("demo2").innerHTML = text2;
+
 </script>
+
 
 </body>
 </html>
